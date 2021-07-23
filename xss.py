@@ -94,11 +94,19 @@ def check_vuln(response, payload):
 
 
 if __name__ == '__main__':
+
+    import argparse
+    parser = argparse.ArgumentParser(description="test")
+    parser.add_argument("url", help="The URL to extract links from.")
+    
+    args = parser.parse_args()
+    
+    url = args.url
+
     payload = open_payload_file("xssshort.txt")
     # print(payload)
     session = requests.Session()
     
-    url = "http://testphp.vulnweb.com/login.php"
     form = get_form(url, session)
     if (not form):
         print("url has no form or connection err")
