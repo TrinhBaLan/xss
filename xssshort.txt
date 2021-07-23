@@ -1,0 +1,3 @@
+<script>alert(1)</script>
+<svg onload=(alert)(1)>
+<script>$=1,alert($)</script>
