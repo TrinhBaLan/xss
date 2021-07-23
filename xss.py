@@ -97,7 +97,7 @@ if __name__ == '__main__':
 
     import argparse
     parser = argparse.ArgumentParser(description="test")
-    parser.add_argument("url", help="The URL to extract links from.")
+    parser.add_argument("url", help="URL")
     
     args = parser.parse_args()
     
