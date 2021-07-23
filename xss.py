@@ -98,7 +98,7 @@ if __name__ == '__main__':
     # print(payload)
     session = requests.Session()
     
-    url = "https://daotao.vnu.edu.vn/dkmh/login.asp"
+    url = "http://testphp.vulnweb.com/login.php"
     form = get_form(url, session)
     if (not form):
         print("url has no form or connection err")
